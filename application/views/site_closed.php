@@ -1,0 +1,1 @@
+<h1 class="text-center my-5 py-5">Temporairement fermé pour maintenance,<br />revenez dans quelques minutes !</h1>

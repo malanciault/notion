@@ -1,0 +1,31 @@
+image: samueldebruyn/debian-git
+clone:
+  depth: full
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Deploy to Neo (staging)
+          deployment: Staging
+          script:
+              - apt-get update
+              - apt-get -qq install git-ftp
+              - git config git-ftp.url ftp://staging.planetair.ca/public_html/
+              - git config git-ftp.user $FTP_USERNAME_STAGING
+              - git config git-ftp.password $FTP_PASSWORD_STAGING
+              #- git ftp init
+              - git ftp push -v
+
+
+      - step:
+          name: Deploy to Neo (production)
+          trigger: manual
+          deployment: Production
+          script:
+            - apt-get update
+            - apt-get -qq install git-ftp
+            - git config git-ftp.url ftp://app.planetair.ca/public_html/
+            - git config git-ftp.user $FTP_USERNAME_PRODUCTION
+            - git config git-ftp.password $FTP_PASSWORD_PRODUCTION
+            #- git ftp init
+            - git ftp push -v

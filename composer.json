@@ -1,0 +1,15 @@
+{
+    "name": "malanciault/nootion",
+    "description": "Notion Integratioon",
+    "authors": [
+        {
+            "name": "Marc-André Lanciault",
+            "email": "malanciault@gmail.com"
+        }
+    ],
+    "require": {
+        "madewithlove/notion-php-sdk": "*",
+        "malanciault/threelci": "dev-master"
+    },
+    "minimum-stability": "dev"
+}
