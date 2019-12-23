@@ -12,5 +12,5 @@ $config['app_title_english'] = "";
 $config['language'] = 'french';
 $config['sendgrid_username'] = '';
 $config['sendgrid_password'] = '';
-$config['papertrail_host'] = '';
-$config['papertrail_port'] = '';
+$config['papertrail_host'] = 'logs7.papertrailapp.com';
+$config['papertrail_port'] = '52026';

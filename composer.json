@@ -8,8 +8,8 @@
         }
     ],
     "require": {
-        "madewithlove/notion-php-sdk": "*",
-        "malanciault/threelci": "dev-master"
+        "malanciault/threelci": "dev-master",
+        "madewithlove/notion-php-sdk": "dev-master"
     },
     "minimum-stability": "dev"
 }
